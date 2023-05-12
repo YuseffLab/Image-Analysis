@@ -4,7 +4,7 @@
 	imagenames=getFileList(dir); 
 	nbimages=lengthOf(imagenames); 
 	
-	File.makeDirectory(dir+File.separator+"Cortadas");
+	File.makeDirectory(dir+File.separator+"individual_cells");
 
 
 	for(image=0; image<nbimages; image++) {
