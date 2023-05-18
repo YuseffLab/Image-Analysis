@@ -1,3 +1,4 @@
+//Coded By felipe del Valle for Yuseff Lab.
 
 	dir = getDirectory("Choose the image directory");
 	
