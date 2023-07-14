@@ -14,5 +14,8 @@ You can find this macros under the name of 2D_distribution_analysis and run it i
 
 You can find this script under the name of Rscript_2D_analysis.R and run it in R 
 
+## Examples
+
+This folder contains .tif files to try the scripts available. 
 
 
