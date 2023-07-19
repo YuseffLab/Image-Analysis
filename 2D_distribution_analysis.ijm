@@ -1,6 +1,6 @@
 // Central vs peripheral accumulation cuantification macros by Yuseff Lab
 // Coded by Felipe Del Valle, Martina Alamo and Isidora Riobó 
-run("Set Measurements...", "area mean standard modal min centroid center perimeter bounding fit shape feret's integrated median skewness kurtosis area_fraction display redirect=None decimal=3");
+run("Set Measurements...", "area mean standard modal min centroid center perimeter bounding fit shape feret's integrated median skewness kurtosis stack area_fraction display redirect=None decimal=3");
 close("*");
 setOption("JFileChooser", true);
 dir= getDirectory("Select the folder of your images");
