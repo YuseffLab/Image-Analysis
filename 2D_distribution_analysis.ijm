@@ -1,5 +1,5 @@
 // Central vs peripheral accumulation cuantification macros by Yuseff Lab
-// Coded by Felipe Del Valle, Martina Alamo and Isidora Riobó 
+// Coded by Martina Alamo, Felipe Del Valle, Isidora Riobó 
 run("Set Measurements...", "area mean standard modal min centroid center perimeter bounding fit shape feret's integrated median skewness kurtosis stack area_fraction display redirect=None decimal=3");
 close("*");
 setOption("JFileChooser", true);
@@ -48,7 +48,7 @@ for(image=0; image<nbimages; image++) {
 					roiManager("Update");
 					roiManager("Add");
 					roiManager("Select", 1);
-					RoiManager.scale(0.4, 0.4, true); // HERE you can modify the scale of the original ROI so it fits your needs
+					RoiManager.scale(0.4, 0.4, true); //Here you can change the roi scale
 					roiManager("Select", 0);
 					roiManager("Select", newArray(0,1));
 					roiManager("XOR");
