@@ -2,11 +2,12 @@
 
 library(tidyverse)
 library(readr)
+library(tidyr)
 
 # Select the working environment so it saves the final .csv file to a known location with the command setwd("Working environment pathway")
 
 # Specify the path where the CSV for a and b files are located.   
-path <- "PATH TO YOUR DATA"
+path <- "PASTE YOUR DATA FOLDER PATH HERE"
 
 
 # Create an empty list to store the data frames
@@ -32,18 +33,18 @@ for (file in list.files(path, pattern = ".csv", full.names = TRUE)) {
   df_a$IDc <- read_csv(file) %>% select(23)
   
   # Add the columns corresponding to the periphery mean and Intensity Den 
-  df_a$RIDt <- read_csv(file) %>% select(61)
+  df_a$RIDt <- read_csv(file) %>% select(62)
   
-  df_a$MEANt <- read_csv(file) %>% select(37)
+  df_a$MEANt <- read_csv(file) %>% select(38)
   
-  df_a$IDt <- read_csv(file) %>% select(56)
+  df_a$IDt <- read_csv(file) %>% select(57)
   
   # Same as above but for the XoR exclusion area 
-  df_a$RIDxor <- read_csv(file) %>% select(94)
+  df_a$RIDxor <- read_csv(file) %>% select(96)
   
-  df_a$MEANxor <- read_csv(file) %>% select(70)
+  df_a$MEANxor <- read_csv(file) %>% select(72)
   
-  df_a$IDxor <- read_csv(file) %>% select(89)
+  df_a$IDxor <- read_csv(file) %>% select(91)
   
   # Append the data frame to the list
   df_list[[file_name]] <- df_a
@@ -66,3 +67,4 @@ names(results_df)[4] <- "Periphery"
 
 # save the final csv of results, you can rename this file to your liking
 write.csv(results_df,"results.csv", row.names = FALSE)
+
