@@ -41,7 +41,7 @@
 			
 			for (ROIs=0; ROIs<openimages ; ROIs++) {
 			    cutname=getTitle();
-			    saveAs("Tiff", dir+File.separator+"Cropped"+File.separator+cutname);    
+			    saveAs("Tiff", dir+File.separator+"individual_cells"+File.separator+cutname);    
 			    run("Close");
 			}
 			selectWindow("ROI Manager");
